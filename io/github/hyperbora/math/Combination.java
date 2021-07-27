@@ -29,10 +29,13 @@ public class Combination {
 
         for (var lst : combinationList) {
             System.out.print("[");
-            for (var item : lst) {
-                System.out.print(item + " ");
+            if (!lst.isEmpty()) {
+                for (var item : lst) {
+                    System.out.print(item + " ");
+                }
+                System.out.print("\b");
             }
-            System.out.println("\b]");
+            System.out.println("]");
         }
     }
 }
